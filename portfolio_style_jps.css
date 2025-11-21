@@ -1,0 +1,91 @@
+/* Stylesheet used for portfolio website! */
+/* COLOURS: */
+/*
+Analagous: #F3F7D4 #CBE432 #7FBD32 #448D76 #093426 USE THIS!
+Complementary: #F7D4D6 #EA202C #7FBD32 #6EB814 #213409
+Compound: #F6DAED #A7177A #7FB73B #EE551E #32160C
+Monochromatic: #C6E69F #9AD256 #689B29 #314913 #1B2B08
+*/
+body {
+    margin: 0;
+    padding: 0;
+   /* background-color: rgb(100, 167, 100);*/
+    background-color: #7FBD32;
+}
+
+header {
+    /* Used for universal headers */
+    /* HEADER goes at the TOP! */
+    background-color: rgb(85, 140, 85);
+    padding: 0;
+    margin: 0;
+}
+
+.Horz { /* Horizontal classifier */
+    float: left; /* Aligns the elements to the left */
+}
+
+.navBar {
+    list-style-type: none; /* None of the entries require a bullet point */
+    margin: 0; /* Sets the navigation bar to the top left of the page */
+    padding: 0;
+    overflow: hidden;
+    background-color: #448D76;
+
+
+    position: sticky; /* Position is fixed thorughout page */
+    top: 0;
+    
+    border-color: #093426; /* Setting standard border definitions */
+    border-radius: 1px;
+    border-bottom-style: solid;
+}
+
+.navBar a { /* Applies to each navbar section AND the dropdown parts */
+    display: inline-block;   
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: #093426;
+    
+    border-right-style: solid; /* Inherits boarder size and colour fron NAVBAR */
+}
+
+.navBar a:hover, .dropDown:hover { /* ':hover' is a pseudo class! */
+    background-color: #F3F7D4;
+}
+
+.dropDownCont { /* dropDown Content Class */ 
+    display: none; /* Hides the dropdown box until hovered over */
+    position: fixed; /* Fixes the dropdown menu directly below the button */
+    background-color: #F3F7D4;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    min-width: none; /* Specifies minimum width of dropdown container */
+}
+
+.dropDownCont a { /* Any hyperlinks inside the dropdown content */
+    color: #093426;
+    padding: 20px 40px; /*  */
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+    border-top-style: solid; /* Inherits boarder style from NAVBAR! */
+    border-right-style: none;
+}
+
+.dropDownCont a:hover { /* Any hyperlinks inside the dropdown content, WHEN hovered over */
+    background-color: #CBE432;
+}
+
+/* dropDown Classifier ZERO CLUE WHAT'S HAPPENING HERE! */
+.dropDown:hover .dropDownCont{ /* Any dropdown CONTENT, WHEN the dropdown bar is hovered over */
+    display: block; /* Displays the dropdown bar when hovered over! */
+}
+
+.mainBody {
+    margin: 12px;
+}
