@@ -9,16 +9,16 @@ Monochromatic: #C6E69F #9AD256 #689B29 #314913 #1B2B08
 body {
     margin: 0;
     padding: 0;
-   /* background-color: rgb(100, 167, 100);*/
-    background-color: #7FBD32;
+    background-color: #7FBD32;  /* Default background colour */
+    color: #093426;             /* Default colour for text */
 }
 
-header {
-    /* Used for universal headers */
-    /* HEADER goes at the TOP! */
-    background-color: rgb(85, 140, 85);
-    padding: 0;
-    margin: 0;
+header { /* Used for universal headers */
+         /* HEADER goes at the TOP! */
+    background-color: #448D76;
+    padding: 1px;
+    text-align: center;
+    color: #093426;
 }
 
 .Horz { /* Horizontal classifier */
@@ -26,8 +26,8 @@ header {
 }
 
 .navBar {
-    list-style-type: none; /* None of the entries require a bullet point */
-    margin: 0; /* Sets the navigation bar to the top left of the page */
+    list-style-type: none;  /* None of the entries require a bullet point */
+    margin: 0;              /* Sets the navigation bar to the top left of the page */
     padding: 0;
     overflow: hidden;
     background-color: #448D76;
@@ -55,9 +55,9 @@ header {
     background-color: #F3F7D4;
 }
 
-.dropDownCont { /* dropDown Content Class */ 
-    display: none; /* Hides the dropdown box until hovered over */
-    position: fixed; /* Fixes the dropdown menu directly below the button */
+.dropDownCont {         /* dropDown Content Class */ 
+    display: none;      /* Hides the dropdown box until hovered over */
+    position: fixed;    /* Fixes the dropdown menu directly below the button */
     background-color: #F3F7D4;
     z-index: 1;
     left: 0;
@@ -81,9 +81,8 @@ header {
     background-color: #CBE432;
 }
 
-/* dropDown Classifier ZERO CLUE WHAT'S HAPPENING HERE! */
-.dropDown:hover .dropDownCont{ /* Any dropdown CONTENT, WHEN the dropdown bar is hovered over */
-    display: block; /* Displays the dropdown bar when hovered over! */
+.dropDown:hover .dropDownCont{  /* Any dropdown CONTENT, WHEN the dropdown bar is hovered over */
+    display: block;             /* Displays the dropdown bar when hovered over! */
 }
 
 .mainBody {

@@ -1,42 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Portfolio, Projects, Python, CAD, HID, Arduino">
     <title>Mr Styles' Portfolio - Welcome!</title>
+    <metaData-jps></metaData-jps>
     <link rel="stylesheet" href="portfolio_style_jps.css">
 </head>
 
-<body>
-    
-    <ul class="navBar">               
-        <li class="Horz"> <!-- Main -->
-            <a href="index.html">Main</a>
-        </li>
-        <li class="Horz"> <!-- About -->
-            <a href="about.html">About</a>
-        </li>
-        <li class="dropDown Horz"> <!-- Projects -->
-            <a href="projects.html">Projects</a>
-            <div class="dropDownCont">
-                <a href="projects.html">Project #1</a>
-                <a href="projects.html">Project #2</a>
-                <a href="projects.html">Project #3</a>
-            </div>
-            
-        </li>
-        <li class="Horz"> <!-- Contact -->
-            <a href="contact.html">Contact</a>
-        </li>
-    </ul>
+<body onload="formatCurrentPage()">
+
+    <navbar-jps></navbar-jps>
     <div class="mainBody">
         <h1>Welcome</h1>
         <p>Hello! Welcome to my portfolio website. As you can see, it's currently fairly bare-bones, but stay tuned for more to come. Feel free to have a look around.</p>
     </div>
-    <footer>
-
-    </footer>
-     
+    <footer-jps></footer-jps>
+    <script src="portfolio_script_jps.js"></script>
 </body>
 </html>
