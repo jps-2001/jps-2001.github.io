@@ -16,7 +16,7 @@ body {
 header { /* Used for universal headers */
          /* HEADER goes at the TOP! */
     background-color: #448D76;
-    padding: 1px;
+    padding: 12px;
     text-align: center;
     color: #093426;
 }
@@ -33,7 +33,7 @@ header { /* Used for universal headers */
     background-color: #448D76;
 
 
-    position: sticky; /* Position is fixed thorughout page */
+    position: sticky; /* Position is fixed thoroughout page */
     top: 0;
     
     border-color: #093426; /* Setting standard border definitions */
@@ -74,7 +74,7 @@ header { /* Used for universal headers */
     text-align: left;
     
     border-top-style: solid; /* Inherits boarder style from NAVBAR! */
-    border-right-style: none;
+    border-right-style: none;    
 }
 
 .dropDownCont a:hover { /* Any hyperlinks inside the dropdown content, WHEN hovered over */
@@ -85,6 +85,47 @@ header { /* Used for universal headers */
     display: block;             /* Displays the dropdown bar when hovered over! */
 }
 
-.mainBody {
-    margin: 12px;
+.mainBody { /* Grid layout for elements on a page. Useful for displaying side-to-side! */
+    padding: 12px;
+    display: grid;
+    /* 'grid-template' can be used as a short-hand version of the three indentifiers below! */
+    
+    grid-template-columns: repeat(12, [col-start] 1fr); /* '1fr' is a fractional unit, so each width remains equal relative to eachother! */
+    /* format: grid-row-start, grid-column-start, grid-row-end, grid-column-end */
+
+    /* Temporarily removed
+    grid-template-rows: auto;
+    grid-template-areas: auto;
+    */
+
+    gap: 12px;
+    
+    background-color: #7FBD32;
+}
+
+.projectDesc {
+    padding: 12px;
+    margin: 0px;  
+ 
+    background-color: #CBE432;
+    
+}
+
+/* TODO: Add grid starting/ending columns here!!
+Notes: ideally use these as default left/right edges, but perhaps use unique locations for each project section ??? */
+.leftEdge { 
+    grid-column: col-start / span 5 ;
+}
+
+.rightEdge {
+    grid-column: col-start 6 / span 7;
+}
+
+
+.projectGallery {
+    padding: 12px;
+    margin: 0px;
+  
+    background-color: #CBE432;
+
 }

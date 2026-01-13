@@ -49,6 +49,10 @@ class metaData_jps extends HTMLElement {
 
 function formatCurrentPage() {  
     var pageID = location.pathname.split(".html").slice()[0].split("/")[1]; // Non-elegant way of obtaining the name of the webpage, for inspection
+    if (pageID == "")   {   // Bug fix so basic URL shows active page
+        pageID = "index";
+    } 
+        
     pageID = pageID + "-jps"
     document.getElementById(pageID).style.backgroundColor = "#CBE432";
     document.getElementById("debug").innerHTML = pageID
