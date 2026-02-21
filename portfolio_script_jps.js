@@ -43,7 +43,7 @@ class metaData_jps extends HTMLElement {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="keywords" content="Portfolio, Projects, Python, CAD, HID, Arduino">
-            <base href="jps-2001.github.io/" target="_blank">
+            <base href="https://github.com/jps-2001/jps-2001.github.io/" target="_blank">
         `;
     }
 }
