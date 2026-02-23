@@ -106,9 +106,9 @@ header { /* Used for universal headers */
 .projectDesc {
     padding: 12px;
     margin: 0px;  
- 
     background-color: #CBE432;
-    
+
+    overflow: auto; /* Might be useful for aligning text with images! */
 }
 
 /* TODO: Add grid starting/ending columns here!!
@@ -129,3 +129,13 @@ Notes: ideally use these as default left/right edges, but perhaps use unique loc
     background-color: #CBE432;
 
 }
+
+
+.projectGallery img {
+    width: 100%;
+    
+    /* TODO: adjust project description heights to match height of picture, with auto scrolling, if needed! */
+
+   /* No need to do 100% height: scales image way too much! */
+}
+
