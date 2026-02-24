@@ -93,10 +93,7 @@ header { /* Used for universal headers */
     grid-template-columns: repeat(12, [col-start] 1fr); /* '1fr' is a fractional unit, so each width remains equal relative to eachother! */
     /* format: grid-row-start, grid-column-start, grid-row-end, grid-column-end */
 
-    /* Temporarily removed
-    grid-template-rows: auto;
-    grid-template-areas: auto;
-    */
+
 
     gap: 12px;
     
@@ -107,8 +104,9 @@ header { /* Used for universal headers */
     padding: 12px;
     margin: 0px;  
     background-color: #CBE432;
+    /* overflow: auto;   Might be useful for aligning text with images! */
 
-    overflow: auto; /* Might be useful for aligning text with images! */
+    
 }
 
 /* TODO: Add grid starting/ending columns here!!
@@ -121,6 +119,14 @@ Notes: ideally use these as default left/right edges, but perhaps use unique loc
     grid-column: col-start 6 / span 7;
 }
 
+.p_macropad {
+    grid-row: 1;
+    
+}
+
+.p_sudoku {
+    grid-row: 2;
+}
 
 .projectGallery {
     padding: 12px;
