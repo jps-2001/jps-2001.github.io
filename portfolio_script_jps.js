@@ -59,6 +59,12 @@ function formatCurrentPage() {
 
 }
 
+function formatProjectImageHeights() {
+    // Get current image height, compare with corresponding height of project description
+    // Find the lower of the two, scale opposite accordingly
+}
+
+
 // Custom element definition here:
 customElements.define("navbar-jps", navBar_jps); // Defines the class as a custom HTML element, ready to use!
 customElements.define("footer-jps", footer_jps);
