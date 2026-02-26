@@ -59,9 +59,31 @@ function formatCurrentPage() {
 
 }
 
-function formatProjectImageHeights() {
+function formatProjectImageHeights(projectID) {
+
+// TODO: won't work, try 'clientHeight, but read only!
+
     // Get current image height, compare with corresponding height of project description
     // Find the lower of the two, scale opposite accordingly
+    projectContent = getElementsByClassName(projectID)
+    var height_A = projectContent[0].style.height   // Get image and description heights
+    var height_B = projectContent[1].style.height
+    const heights = [height_B, height_A]            // Store heights in array (inverted for later use!)
+
+    if (height_A != height_B) {
+        if (height_B > height_A) {
+            var ratio = height_B / height_A         // Desired image ratio, to maintain!
+            var toChange = 1                        // Index to address height to change
+        } else {
+            var ratio = height_A / height_B         
+            var toChange = 0                        // Makes use of inverted 'heights' array!
+        }                                           // Used to set height to other, smaller, height
+        projectContent[toChange].style.height = heights[toChange]
+                                                    // Adjusts width with ratio
+        projectContent[toChange].style.width = projectContent[toChange].style.width / ratio
+    }
+
+    
 }
 
 
